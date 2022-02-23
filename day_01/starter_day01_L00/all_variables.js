@@ -113,51 +113,141 @@
 // alert("Vous avez vécu " + seconde + " secs.");
 
 // EXO LVL 03 //
-var time = dateheure();
-function dateheure() {
-  const now = new Date();
-  var annee = now.getFullYear();
-  var mois = now.getMonth();
-  var jour = now.getDate();
-  var heure = now.getHours();
-  var min = now.getMinutes();
-  var sec = now.getSeconds();
+// var time = dateheure();
+// function dateheure() {
+//   const now = new Date();
+//   var annee = now.getFullYear();
+//   var mois = now.getMonth();
+//   var jour = now.getDate();
+//   var heure = now.getHours();
+//   var min = now.getMinutes();
+//   var sec = now.getSeconds();
 
-  var time =
-    ("0" + jour).slice(-2) +
-    "/" +
-    ("0" + (mois + 1)).slice(-2) +
-    "/" +
-    annee +
-    ", " +
-    ("0" + heure).slice(-2) +
-    ":" +
-    ("0" + min).slice(-2) +
-    ":" +
-    ("0" + sec).slice(-2);
+//   var time =
+//     ("0" + jour).slice(-2) +
+//     "/" +
+//     ("0" + (mois + 1)).slice(-2) +
+//     "/" +
+//     annee +
+//     ", " +
+//     ("0" + heure).slice(-2) +
+//     ":" +
+//     ("0" + min).slice(-2) +
+//     ":" +
+//     ("0" + sec).slice(-2);
 
-  return time;
+//   return time;
+// }
+
+// console.log(time);
+
+// // LVL 04 //
+
+// let a = 4;
+// let b = 3;
+
+// if (a > b) {
+//   alert("BRAVO C SUPERIEUR FDP");
+// } else if (a < b) {
+//   alert("BRAVO C INFERIEUR FDP");
+// }
+
+// function getFee(isMember) {
+//   return isMember ? "3" : "4";
+// }
+
+// console.log(getFee(true));
+
+// console.log(getFee(false));
+
+// console.log(getFee(null));
+
+// let entrez = prompt("Entrez un nombre: ");
+// let pair = entrez % 2;
+// console.log(pair);
+
+// if (pair == 0) {
+//   alert(entrez + " est un nombre pair.");
+// } else if (pair == 1) {
+//   alert(entrez + " est un nombre impair.");
+// }
+
+// CONDITIONS LVL02 //
+
+// let eleve = prompt("C'est quoi ton score? ");
+
+// let a = Math.floor(Math.random() * (100 - 80 + 1)) + 80;
+// let b = Math.floor(Math.random() * (89 - 70 + 1)) + 70;
+// let c = Math.floor(Math.random() * (69 - 60 + 1)) + 60;
+// let d = Math.floor(Math.random() * (59 - 50 + 1)) + 50;
+// let f = Math.floor(Math.random() * (49 - 0 + 1)) + 0;
+
+// if (eleve == "a") {
+//   console.log(alert("Bravo tu as eu " + a + " tu es le meilleur"));
+// } else if (eleve == "b") {
+//   console.log(alert("Waou tu as eu " + b + " tu es fort"));
+// } else if (eleve == "c") {
+//   console.log(alert("Tu as eu " + c + " c'est assez bien"));
+// } else if (eleve == "d") {
+//   console.log(alert("Tu as eu " + d + " c'est la moyenne"));
+// } else if (eleve == "f") {
+//   console.log(alert("Tu as eu " + f + " c'est la merde :("));
+// }
+
+// ******** 2 //
+
+// let entree = prompt("Quel mois");
+
+// let septembre = "septembre";
+// let octobre = "octobre";
+// let novembre = "novembre";
+// let decembre = "decembre";
+// let janvier = "janvier";
+// let fevrier = "fevrier";
+// let mars = "mars";
+// let avril = "avril";
+// let mai = "mai";
+// let juin = "juin";
+// let juillet = "juillet";
+// let aout = "aout";
+
+// if (entree == septembre || entree == octobre || entree == novembre) {
+//   console.log(alert("Vous etes en automne"));
+// } else if (entree == decembre || entree == janvier || entree == fevrier) {
+//   console.log(alert("Vous etes en hiver"));
+// } else if (entree == mars || entree == avril || entree == mai) {
+//   console.log(alert("Vous etes en printemps"));
+// } else if (entree == juin || entree == juillet || entree == aout) {
+//   console.log(alert("Vous etes en ete"));
+// }
+
+// EXO LVL 03 //
+let entree = prompt("Quel mois");
+
+let septembre = "septembre";
+let octobre = "octobre";
+let novembre = "novembre";
+let decembre = "decembre";
+let janvier = "janvier";
+let fevrier = "fevrier";
+let mars = "mars";
+let avril = "avril";
+let mai = "mai";
+let juin = "juin";
+let juillet = "juillet";
+let aout = "aout";
+
+if (
+  entree == janvier ||
+  entree == mai ||
+  entree == juillet ||
+  entree == aout ||
+  entree == octobre ||
+  entree == decembre
+) {
+  console.log(alert(entree + " a 31 jours"));
+} else if (entree == fevrier) {
+  console.log(alert(entree + " a 28 jours"));
+} else if (entree == septembre || entree == novembre || entree == juin) {
+  console.log(alert(entree + " a 30 jours"));
 }
-
-console.log(time);
-
-// LVL 04 //
-
-let a = 4;
-let b = 3;
-
-if (a > b) {
-  alert("BRAVO C SUPERIEUR FDP");
-} else if (a < b) {
-  alert("BRAVO C INFERIEUR FDP");
-}
-
-function getFee(isMember) {
-  return isMember ? "3" : "4";
-}
-
-console.log(getFee(true));
-
-console.log(getFee(false));
-
-console.log(getFee(null));
