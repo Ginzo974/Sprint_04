@@ -112,34 +112,34 @@
 
 // alert("Vous avez vécu " + seconde + " secs.");
 
-// EXO LVL 03 //
-// var time = dateheure();
-// function dateheure() {
-//   const now = new Date();
-//   var annee = now.getFullYear();
-//   var mois = now.getMonth();
-//   var jour = now.getDate();
-//   var heure = now.getHours();
-//   var min = now.getMinutes();
-//   var sec = now.getSeconds();
+//EXO LVL 03 //
+var time = dateheure();
+function dateheure() {
+  const now = new Date();
+  var annee = now.getFullYear();
+  var mois = now.getMonth();
+  var jour = now.getDate();
+  var heure = now.getHours();
+  var min = now.getMinutes();
+  var sec = now.getSeconds();
 
-//   var time =
-//     ("0" + jour).slice(-2) +
-//     "/" +
-//     ("0" + (mois + 1)).slice(-2) +
-//     "/" +
-//     annee +
-//     ", " +
-//     ("0" + heure).slice(-2) +
-//     ":" +
-//     ("0" + min).slice(-2) +
-//     ":" +
-//     ("0" + sec).slice(-2);
+  var time =
+    ("0" + jour).slice(-2) +
+    "/" +
+    ("0" + (mois + 1)).slice(-2) +
+    "/" +
+    annee +
+    ", " +
+    ("0" + heure).slice(-2) +
+    ":" +
+    ("0" + min).slice(-2) +
+    ":" +
+    ("0" + sec).slice(-2);
 
-//   return time;
-// }
+  return time;
+}
 
-// console.log(time);
+console.log(time);
 
 // // LVL 04 //
 
@@ -221,33 +221,33 @@
 //   console.log(alert("Vous etes en ete"));
 // }
 
-// EXO LVL 03 //
-let entree = prompt("Quel mois");
+// // EXO LVL 03 //
+// let entree = prompt("Quel mois");
 
-let septembre = "septembre";
-let octobre = "octobre";
-let novembre = "novembre";
-let decembre = "decembre";
-let janvier = "janvier";
-let fevrier = "fevrier";
-let mars = "mars";
-let avril = "avril";
-let mai = "mai";
-let juin = "juin";
-let juillet = "juillet";
-let aout = "aout";
+// let septembre = "septembre";
+// let octobre = "octobre";
+// let novembre = "novembre";
+// let decembre = "decembre";
+// let janvier = "janvier";
+// let fevrier = "fevrier";
+// let mars = "mars";
+// let avril = "avril";
+// let mai = "mai";
+// let juin = "juin";
+// let juillet = "juillet";
+// let aout = "aout";
 
-if (
-  entree == janvier ||
-  entree == mai ||
-  entree == juillet ||
-  entree == aout ||
-  entree == octobre ||
-  entree == decembre
-) {
-  console.log(alert(entree + " a 31 jours"));
-} else if (entree == fevrier) {
-  console.log(alert(entree + " a 28 jours"));
-} else if (entree == septembre || entree == novembre || entree == juin) {
-  console.log(alert(entree + " a 30 jours"));
-}
+// if (
+//   entree == janvier ||
+//   entree == mai ||
+//   entree == juillet ||
+//   entree == aout ||
+//   entree == octobre ||
+//   entree == decembre
+// ) {
+//   console.log(alert(entree + " a 31 jours"));
+// } else if (entree == fevrier) {
+//   console.log(alert(entree + " a 28 jours"));
+// } else if (entree == septembre || entree == novembre || entree == juin) {
+//   console.log(alert(entree + " a 30 jours"));
+// }
